@@ -1,6 +1,7 @@
-package com.giuseppe.aprendendo_spring.infrastructure.repository;
+package com.giuseppe.infrastructure.repository;
 
-import com.giuseppe.aprendendo_spring.infrastructure.entity.Telefone;
+
+import com.giuseppe.infrastructure.entity.Telefone;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

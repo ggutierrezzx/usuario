@@ -1,7 +1,9 @@
-package com.giuseppe.aprendendo_spring.infrastructure.security;
+package com.giuseppe.infrastructure.security;
 
-import com.giuseppe.aprendendo_spring.infrastructure.entity.Usuario;
-import com.giuseppe.aprendendo_spring.infrastructure.repository.UsuarioRepository;
+
+
+import com.giuseppe.infrastructure.entity.Usuario;
+import com.giuseppe.infrastructure.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -24,8 +26,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         // Cria e retorna um objeto UserDetails com base no usuário encontrado
         return org.springframework.security.core.userdetails.User
-                .withUsername(usuario.getEmail()) // Define o nome de usuário como o e-mail
-                .password(usuario.getSenha()) // Define a senha do usuário
+                .withUsername(usuario.getUsername()) // Define o nome de usuário como o e-mail
+                .password(usuario.getPassword()) // Define a senha do usuário
                 .build(); // Constrói o objeto UserDetails
     }
 }

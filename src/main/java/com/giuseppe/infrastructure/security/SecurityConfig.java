@@ -1,4 +1,4 @@
-package com.giuseppe.aprendendo_spring.infrastructure.security;
+package com.giuseppe.infrastructure.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
